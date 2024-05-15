@@ -4,7 +4,7 @@ export const ServerContext = createContext(null)
 const ServerLinkProveder = ({ children }) => {
 
     // const serverLink = 'http://localhost:5000'
-    const serverLink = 'https://repair-ranger-mh.vercel.app'
+    const serverLink = 'https://repairrangers-server.vercel.app'
 
     return (
         <ServerContext.Provider value={{ serverLink }}>

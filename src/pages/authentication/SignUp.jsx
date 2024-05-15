@@ -31,18 +31,18 @@ const SignUp = () => {
                     console.error(error);
                 });
                 // post user in mongodb users collection
-                const { photoUrl, userName, email } = formData
-                const userData = { userName, email, photoUrl, uid: result.user.uid, metadata: result.user.metadata }
-                axios.post(`${serverLink}/users`, userData)
-                    .then(function (response) {
-                        // console.log(response.data);
-                        response.data.insertedId && toast.success('Sign up success');
-                        // console.log(result.user);
-                        navigate('/')
-                    })
-                    .catch(function (error) {
-                        console.log(error);
-                    });
+                // const { photoUrl, userName, email } = formData
+                // const userData = { userName, email, photoUrl, uid: result.user.uid, metadata: result.user.metadata }
+                // axios.post(`${serverLink}/users`, userData)
+                //     .then(function (response) {
+                //         // console.log(response.data);
+                //         response.data.insertedId && toast.success('Sign up success');
+                //         // console.log(result.user);
+                //         navigate('/')
+                //     })
+                //     .catch(function (error) {
+                //         console.log(error);
+                //     });
             })
             .catch(error => {
                 console.error(error);
