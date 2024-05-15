@@ -1,0 +1,87 @@
+const placeholderImageUrl = 'https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg';
+
+const homeRepairServices = [
+   {
+      serviceType: "Plumbing",
+      description: "Fix leaky faucets, repair burst pipes, install new fixtures, and more.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   },
+   {
+      serviceType: "Electrical",
+      description: "Repair faulty wiring, install new outlets, upgrade electrical panels, and more.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   },
+   {
+      serviceType: "HVAC (Heating, Ventilation, and Air Conditioning)",
+      description: "Install, repair, and maintain heating and cooling systems.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   },
+   {
+      serviceType: "Carpentry",
+      description: "Build custom furniture, repair wooden structures, install trim, and more.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   },
+   {
+      serviceType: "Painting",
+      description: "Interior and exterior painting services for residential properties.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   },
+   {
+      serviceType: "Roofing",
+      description: "Repair leaks, replace damaged shingles, install new roofs, and more.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   },
+   {
+      serviceType: "Landscaping",
+      description: "Lawn care, tree trimming, garden design, and other outdoor maintenance services.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   },
+   {
+      serviceType: "Appliance Repair",
+      description: "Fix issues with refrigerators, washing machines, dryers, dishwashers, and more.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   },
+   {
+      serviceType: "Pest Control",
+      description: "Get rid of pests such as ants, termites, rodents, bed bugs, and more.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   },
+   {
+      serviceType: "Flooring",
+      description: "Install hardwood, tile, carpet, laminate, and other types of flooring.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   },
+   {
+      serviceType: "Window Repair/Replacement",
+      description: "Repair broken windows or replace them with energy-efficient options.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   },
+   {
+      serviceType: "Drywall Installation/Repair",
+      description: "Install new drywall, repair holes and cracks, and finish surfaces.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   },
+   {
+      serviceType: "Gutter Cleaning/Repair",
+      description: "Clean debris from gutters and downspouts, repair leaks, and install gutter guards.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   },
+   {
+      serviceType: "Fencing",
+      description: "Install, repair, or replace fences for privacy, security, or aesthetic purposes.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   },
+   {
+      serviceType: "Masonry",
+      description: "Repair or build brick or stone structures, including chimneys, walls, and patios.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   },
+   {
+      serviceType: "Home Security Systems",
+      description: "Install and maintain security cameras, alarms, and other home security devices.",
+      image: "https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
+   }
+];
+
+// Sample usage:
+console.log(homeRepairServices);
