@@ -1,12 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { ServerContext } from '../../providers/ServerLinkProveder';
+// import { ServerContext } from '../../providers/ServerLinkProveder';
 import ServiceCard from './ServiceCard';
 import ReactHelmet from '../../components/helmet/ReactHelmet';
-import axios from 'axios';
+// import axios from 'axios';
 import { FaSearch } from 'react-icons/fa';
+import useAxiosSecure from '../../axios/useAxiosSecure';
 
 const AllServices = () => {
-    const { serverLink } = useContext(ServerContext)
+    // const { serverLink } = useContext(ServerContext)
+    const axiosSecure = useAxiosSecure()
     const [services, setServices] = useState([])
     const [dataLoading, setDataLoading] = useState(false)
 
@@ -14,7 +16,8 @@ const AllServices = () => {
         setDataLoading(true)
         async function fetchData() {
             try {
-                const response = await axios.get(`${serverLink}/services`)
+                // const response = await axios.get(`${serverLink}/services`)
+                const response = await axiosSecure.get('/services')
                 setServices(response.data)
             } catch (error) {
                 console.error(error);
@@ -23,7 +26,7 @@ const AllServices = () => {
             }
         }
         fetchData()
-    }, [])
+    }, [axiosSecure])
 
     function handleSearch(e) {
         e.preventDefault()
@@ -32,7 +35,7 @@ const AllServices = () => {
         setDataLoading(true)
         async function fetchData() {
             try {
-                const response = await axios.get(`${serverLink}/services?search=${searchVal}`)
+                const response = await axiosSecure.get(`/services?search=${searchVal}`)
                 setServices(response.data)
                 // console.log(response.data);
             } catch (error) {

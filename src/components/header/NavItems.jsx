@@ -18,7 +18,7 @@ const NavItems = () => {
                 <>
                     <li className="hidden lg:block dropdown dropdown-hover">
                         <div tabIndex={0} role="button" className="">Dashboard</div>
-                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow-md bg-base-100 rounded-md w-52">
+                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow-md bg-base-100 rounded-md w-52 text-neutral-50">
                             {dashboardOptions}
                         </ul>
                     </li>

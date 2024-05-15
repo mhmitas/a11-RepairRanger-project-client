@@ -9,11 +9,11 @@ import BestPart from './marquee/bestPartSection/BestPart';
 const Home = () => {
     return (
         <div className=''>
-            <Banner></Banner>
-            <ServicesMarquee></ServicesMarquee>
+            {/* <Banner></Banner>
+            <ServicesMarquee></ServicesMarquee> */}
             <PopularServices></PopularServices>
-            <BestPart></BestPart>
-            <HomeFaq></HomeFaq>
+            {/* <BestPart></BestPart>
+            <HomeFaq></HomeFaq> */}
             <ReactHelmet title="Home"></ReactHelmet>
         </div>
     );

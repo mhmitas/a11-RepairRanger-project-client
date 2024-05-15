@@ -4,15 +4,18 @@ import { ServerContext } from '../../providers/ServerLinkProveder';
 import useAuth from '../../hooks/useAuth';
 import BookedTableRow from './BookedTableRow';
 import ReactHelmet from '../../components/helmet/ReactHelmet';
+import useAxiosSecure from '../../axios/useAxiosSecure';
 
 const BookedServices = () => {
     const { user } = useAuth()
     const { serverLink } = useContext(ServerContext);
+    const axiosSecure = useAxiosSecure()
     const [services, setServices] = useState([]);
     const [dataLoading, setDataLoading] = useState(true)
     useEffect(() => {
         setDataLoading(true)
-        axios.get(`${serverLink}/booked-services/${user.uid}`, { withCredentials: true })
+        // axios.get(`${serverLink}/booked-services/${user.uid}`, { withCredentials: true })
+        axiosSecure.get(`/booked-services/${user.uid}`)
             .then(res => {
                 // console.log(res.data);
                 setServices(res.data)
@@ -23,6 +26,9 @@ const BookedServices = () => {
                 setDataLoading(false)
             })
     }, [])
+
+    // http://localhost:5000/services-todo/AGctvCKRbOa8JQoHI8yHzU6IBHc2
+    // https://repairrangers-server.vercel.app/services-todo/AGctvCKRbOa8JQoHI8yHzU6IBHc2
 
     if (dataLoading) {
         return <span className='py-4 text-xl'>Loading...</span>
