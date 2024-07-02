@@ -11,3 +11,16 @@
 - The website utilizes JWT tokens and HTTP-only cookies for security purposes.
 - A simple search system allows users to find services by their titles.
 - The app offers both light and dark color themes and is responsive across all devices.
+
+
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/)
+
+### Installation
+
+1. **Clone the repo**
+```sh
+   git clone https://github.com/your-username/your-repo-name.git
+ ```
+2. **Add necessary firebase and stripte configuration to the .env.local file and add your server URL**
