@@ -12,7 +12,7 @@
 - A simple search system allows users to find services by their titles.
 - The app offers both light and dark color themes and is responsive across all devices.
 
-
+### To get a local copy up and running, follow these simple steps.
 Ensure you have the following installed:
 - [Node.js](https://nodejs.org/) (v14 or higher)
 - [npm](https://www.npmjs.com/)
