@@ -1,6 +1,6 @@
 # Repair Ranger 
 ### [live link](https://repairrangers.vercel.app/)
-### [Server Repo:](https://github.com/mhmitas/a11-RepairRanger-project-server)
+### [Server Repo Link](https://github.com/mhmitas/a11-RepairRanger-project-server)
 
 ## Overview
 *This website is dedicated to home repair services. Here, users can find various home repair services. Additionally, service providers can showcase their own services by posting them on the platform.*
@@ -11,7 +11,7 @@
 - On the "Services To Do" page, users can see the services booked by clients and update the service status accordingly.
 - The website utilizes JWT tokens and HTTP-only cookies for security purposes.
 - A simple search system allows users to find services by their titles.
-- The app offers both light and dark color themes and is responsive across all devices.
+- The app offers light and dark color themes and is responsive across all devices.
 
 ### To get a local copy up and running, follow these simple steps.
 Ensure you have the following installed:
