@@ -4,11 +4,11 @@ import ServiceCard from './ServiceCard';
 import ReactHelmet from '../../components/helmet/ReactHelmet';
 // import axios from 'axios';
 import { FaSearch } from 'react-icons/fa';
-import useAxiosSecure from '../../axios/useAxiosSecure';
+import { axiosSecure } from '../../axios/useAxiosSecure';
 
 const AllServices = () => {
     // const { serverLink } = useContext(ServerContext)
-    const axiosSecure = useAxiosSecure()
+    // const axiosSecure = useAxiosSecure()
     const [services, setServices] = useState([])
     const [dataLoading, setDataLoading] = useState(false)
 
@@ -18,6 +18,7 @@ const AllServices = () => {
             try {
                 // const response = await axios.get(`${serverLink}/services`)
                 const response = await axiosSecure.get('/services')
+                console.log(response);
                 setServices(response.data)
             } catch (error) {
                 console.error(error);
