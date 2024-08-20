@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom';
 
 
 export const axiosSecure = axios.create({
-    // baseURL: 'https://repairrangers-server.vercel.app',
-    baseURL: 'http://localhost:3000',
+    baseURL: 'https://repairrangerserver-mh-mitas-projects.vercel.app/',
+    // baseURL: 'http://localhost:3000',
     withCredentials: true,
 })
 
