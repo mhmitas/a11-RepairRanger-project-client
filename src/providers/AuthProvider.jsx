@@ -1,14 +1,12 @@
 import axios from 'axios';
 import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth';
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import { app } from '../firebase/firebase.config';
-import { ServerContext } from './ServerLinkProveder';
 
 
 export const AuthContext = createContext(null)
 
 const AuthProvider = ({ children }) => {
-    const { serverLink } = useContext(ServerContext)
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
     const auth = getAuth(app)
@@ -39,12 +37,12 @@ const AuthProvider = ({ children }) => {
             setLoading(false);
             const jwtUser = { user: userEmail, uid: userId }
             if (currentUser) {
-                axios.post(`${serverLink}/login`, jwtUser, { withCredentials: true })
+                axios.post(`${import.meta.env.VITE_SERVER_URL}/login`, jwtUser, { withCredentials: true })
                     .then(res => {
                         (res.data);
                     }).catch(error => console.error(error))
             } else {
-                axios.post(`${serverLink}/logout`, jwtUser, { withCredentials: true })
+                axios.post(`${import.meta.env.VITE_SERVER_URL}/logout`, jwtUser, { withCredentials: true })
                     .then(res => {
                         console.log(res.data);
                     }).catch(error => console.error(error))

@@ -80,7 +80,6 @@ const AddService = () => {
                                 {...register("service_image")}
                                 type="text"
                                 required
-                                readOnly
                                 defaultValue="https://i.ibb.co/XDpCJ3z/2212-q702-011-S-m005-c12-home-renovation.jpg"
                                 className="input input-bordered w-full col-span-2" />
                         </div>

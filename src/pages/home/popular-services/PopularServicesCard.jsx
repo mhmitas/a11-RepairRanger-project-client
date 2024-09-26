@@ -5,7 +5,7 @@ const PopularServicesCard = ({ service }) => {
     const { price, providerName, providerImage, service_name, service_area, service_image, short_description } = service
 
     return (
-        <div className="card glass bg-base-100 rounded-md lg:max-w-5xl max-w-4xl mb-6 p-2 md:grid grid-cols-2 h-max">
+        <div className="card bg-base-100 rounded-md lg:max-w-5xl max-w-4xl mb-6 p-2 md:grid grid-cols-2 h-max">
             <div className='flex items-center rounded-md'>
                 <figure><img className='w-full rounded-md' src={service_image} alt="Album" /></figure>
             </div>
